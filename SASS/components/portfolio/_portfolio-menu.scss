@@ -1,0 +1,39 @@
+.section-portfolio__menu {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.section-portfolio__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.section-portfolio__item:not(:nth-child(n + 4)) {
+    margin-bottom: 15px;
+}
+
+.section-portfolio__button {
+    padding: 6px 22px;
+    
+    background-color: $our-team-section-background-color;
+    color: $title-text-color;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+
+    cursor: pointer;
+    border-radius: 4px;
+
+    transition-property: background-color, color, box-shadow;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+    
+    &--current, &:hover, &:focus {
+        background-color: $accent-color;
+        color: $main-background-color;
+        box-shadow: $portfolio-button-shadow;
+    }
+}
+

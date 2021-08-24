@@ -1,0 +1,18 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $hero-background-color;
+}
+
+.page-footer__container {
+    text-align: center
+}
+
+.page-footer__logo {
+    @extend %logo, %link;
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: $main-background-color;
+}

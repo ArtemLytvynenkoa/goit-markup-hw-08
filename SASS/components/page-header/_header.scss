@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+  .mobile-box {
+    display: none;
+  }
+}
+
+.page-header {
+    border-bottom: 1px solid $header-border;
+}
+
+.page-header__nav,
+.page-header__item {
+    display: inherit;
+    align-items: inherit;
+}
+
+.page-header__logo {
+    @extend %logo, %link;
+}
+
+.logo__first-part {
+    color: $accent-color;
+}

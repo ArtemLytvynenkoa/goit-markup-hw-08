@@ -1,0 +1,72 @@
+.section-team {
+    background-color: $our-team-section-background-color;
+}
+
+.section-team__list {
+    @extend %list;
+}
+
+.describe-box__employee {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.describe-box__profession {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+}
+
+.section-team__item {
+    border-radius: 0px 0px 4px 4px;
+    max-width: 450px;
+
+    background-color: $main-background-color;
+    box-shadow:  $hero-form-shadow;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.describe-box {
+    padding: 30px;
+}
+
+.describe-box__list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+}
+
+.describe-box__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.describe-box__link {
+    @extend %link;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    color: $main-icons-color;
+
+    transition-property: background-color, color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    &:hover, &:focus {
+        background-color: $accent-color;
+        color: $main-background-color;
+    }
+}

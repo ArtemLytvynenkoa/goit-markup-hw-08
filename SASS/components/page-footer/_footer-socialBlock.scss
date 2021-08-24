@@ -1,0 +1,46 @@
+.appeal {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+    color: $main-background-color;
+}
+
+.social-container {
+    margin-bottom: 60px;
+}
+
+.social-container__list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+}
+
+.social-container__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-container__link {
+    @extend %link;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: $main-background-color;
+    background-color: $bgc-social-icon-color;
+
+    transition-property: background-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    &:hover, &:focus {
+        background-color: $accent-color;
+    }
+}

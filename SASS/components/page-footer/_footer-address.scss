@@ -1,0 +1,34 @@
+.address-container__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    margin-bottom: 60px;
+}
+
+.address-container__auth {
+    @extend %list;
+}
+
+.address-container__text {
+    color: $main-background-color;
+}
+
+.address-container__text,
+.address-container__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-container__link {
+    @extend %link;
+    color: $footer-form-text-color;
+
+    transition-property: background-color, color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    &:hover, &:focus {
+        background-color: $primary-text-color;
+        color: $our-team-section-background-color;
+    }
+}

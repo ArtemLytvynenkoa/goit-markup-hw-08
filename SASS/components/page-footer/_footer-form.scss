@@ -1,0 +1,35 @@
+.page-footer__input{
+    height: 50px;
+    width: 100%;
+    padding: 15px 16px;
+
+    border: 1px solid $footer-input-border-color;
+    box-shadow: $main-button-shadow;
+    border-radius: 4px;
+    background-color: transparent;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $footer-form-text-color;
+
+    cursor: pointer;
+
+    margin-bottom: 20px;
+}
+
+.page-footer__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.page-footer__icon {
+     width: 24px;
+     height: 24px;
+     margin-left: 10px;
+     fill: currentColor;
+ }
