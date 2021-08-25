@@ -1,0 +1,33 @@
+.auth-menu {
+    @extend %list;
+}
+
+.auth-menu__item {
+    padding-bottom: 10px;
+}
+
+.auth-menu__link {
+    @extend %link;
+
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    display: flex;
+    align-items: center;
+
+    transition-property: color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    &:hover, &:focus{
+        color: $accent-color;
+}
+}
+
+.auth-menu__icon {
+    margin-right: 8px;
+    fill: currentColor;
+}

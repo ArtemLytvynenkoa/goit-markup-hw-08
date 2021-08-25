@@ -16,6 +16,14 @@
     line-height: 1.19;
 }
 
+%logo-mobile {
+    color: $logo-color;
+    font-family: $logo-font-family; 
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+}
+
 %section-offer__item::before {
     display: block;
     content: "";
