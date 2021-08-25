@@ -6,7 +6,7 @@
     fill: currentColor;
 }
 
-    .menu-toggle {
+.menu-toggle {
     min-height: 40px;
     min-width: 40px;
     display: flex;
@@ -23,7 +23,6 @@
     &:hover, &:focus {
         color: $accent-color;
     }
-
 }
 
 @media screen and (min-width: $tablet) {
@@ -41,13 +40,14 @@
   padding: 48px 40px;
   background-color: $main-background-color;
   z-index: 999;
-
+  opacity: 0;
   transform: translateX(100%);
   transition: transform $transition-duration $transition-timing-function;
 }
 
 .menu-container.is-open {
   transform: translateX(0);
+  opacity: 1;
 }
 
 .js-close-menu {
@@ -158,6 +158,3 @@
 
     color: $accent-color;
 }
-
-
-
