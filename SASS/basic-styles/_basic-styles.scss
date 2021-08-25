@@ -1,0 +1,70 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $mobile){
+        width: 480px;
+    }
+    
+    @media screen and (min-width: $tablet){
+        width: 768px;
+    }
+
+    @media screen and (min-width: $desktop){
+        width: 1200px;
+    }
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    color: $title-text-color; 
+}
+
+.section-offer__subtitle, 
+.describe-box__employee {
+   color: $title-text-color; 
+}
+
+.icon-social {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.button {
+    background-color: $hero-button-color;
+    color: $main-background-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    box-shadow: $main-button-shadow;
+    cursor: pointer;
+
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 0 10px;
+    
+
+    transition-property: background-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    &:focus, &:hover {
+        background-color: $accent-color;
+    }
+}

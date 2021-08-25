@@ -4,21 +4,26 @@
     width: 40px;
     height: 40px;
     fill: currentColor;
-    
-    &:hover, &:focus {
-        color: $accent-color;
-    }
 }
 
-.menu-toggle {
-    width: 40px;
-    height: 40px;
+    .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
 
+    margin: 0;
+    padding: 0;
     background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+
 }
 
 @media screen and (min-width: $tablet) {
@@ -143,7 +148,6 @@
     }
 }
 
-
 .mobile-social__link {
     @extend %link;
     font-family: $main-font-family;
@@ -154,3 +158,6 @@
 
     color: $accent-color;
 }
+
+
+

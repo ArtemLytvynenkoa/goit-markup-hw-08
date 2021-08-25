@@ -945,13 +945,9 @@ input {
   fill: currentColor;
 }
 
-.mobile-menu__icon:hover, .mobile-menu__icon:focus {
-  color: #2196F3;
-}
-
 .menu-toggle {
-  width: 40px;
-  height: 40px;
+  min-height: 40px;
+  min-width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,8 +957,16 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+  color: #2196F3;
 }
 
 @media screen and (min-width: 768px) {
