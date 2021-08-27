@@ -14,10 +14,37 @@
 
 .section-offer__list {
     @extend %list;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -1 * 4%;
+        margin-left: -1 * 4%;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-top: -1 * 2.5%;
+        margin-left: -1 * 2.5%;
+    }
 }
 
 .section-offer__item:not(:last-child) {
     margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+    }
+}
+
+.section-offer__item {
+    @media screen and (min-width: $tablet) {
+        flex-basis: 100% / 2 - 4%;
+        margin-left: 4%;
+        margin-top: 4%;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-basis: 100% / 4 - 2.5%;
+        margin-left: 2.5%;
+        margin-top: 2.5%;
+    }
 }
 
 .section-offer__text{
@@ -43,4 +70,10 @@
 .section__icon-astronaut::before {
     background-image: url(../images/Background-img/backgrounds-wwo-section/astronaut.svg);
     @extend %section-offer__item::before;
+}
+
+.section-offer {
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 0;
+    }
 }

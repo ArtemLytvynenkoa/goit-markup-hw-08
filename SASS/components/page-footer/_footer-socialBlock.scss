@@ -12,6 +12,10 @@
 
 .social-container {
     margin-bottom: 60px;
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+        margin-right: 93px;
+    }
 }
 
 .social-container__list {

@@ -6,7 +6,16 @@
 }
 
 .page-footer__container {
-    text-align: center
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop) {
+        text-align: start;
+    }
 }
 
 .page-footer__logo {
@@ -16,3 +25,4 @@
 
     color: $main-background-color;
 }
+

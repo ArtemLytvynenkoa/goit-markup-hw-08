@@ -12,8 +12,8 @@
     color: $logo-color;
     font-family: $logo-font-family; 
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
 }
 
 %logo-mobile {
@@ -79,4 +79,9 @@
     &:hover, &:focus {
         color: $accent-color;
     }
+}
+
+%auth-menu__icon {
+    margin-right: 8px;
+    fill: currentColor;
 }

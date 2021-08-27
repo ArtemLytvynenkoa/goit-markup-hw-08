@@ -4,6 +4,18 @@
 
 .section-team__list {
     @extend %list;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -1 * 4%;
+        margin-left: -1 * 4%;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-top: -1 * 2.5%;
+        margin-left: -1 * 2.5%;
+    }
 }
 
 .describe-box__employee {
@@ -34,6 +46,23 @@
     &:not(:last-child) {
         margin-bottom: 30px;
     }
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: 100% / 2 - 4%;
+        margin-left: 4%;
+        margin-top: 4%;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-basis: 100% / 4 - 2.5%;
+        margin-left: 2.5%;
+        margin-top: 2.5%;
+    }
+}
+
+.section-team__item:not(:last-child) {
+     @media screen and (min-width: $tablet) {
+         margin-bottom: 0;
+     }
 }
 
 .describe-box {

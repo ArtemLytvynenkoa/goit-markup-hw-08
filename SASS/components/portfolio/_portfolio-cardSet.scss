@@ -1,5 +1,11 @@
 .card-set {
     @extend %list;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -1 * 4%;
+        margin-left: -1 * 4%;  
+     }
 }
 
 .card-set__product {
@@ -7,6 +13,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+        flex-basis: 100% / 2 - 4%;
+        margin-left: 4%;
+        margin-top: 4%;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
 }
 
 .card-set__link {

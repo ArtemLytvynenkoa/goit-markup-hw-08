@@ -1,5 +1,35 @@
-@media screen and (max-width: $desktop ) {
+@media screen and (max-width: $desktop - 1px ) {
     .section-wwd {
         display: none;
     }
 } 
+
+.section-wwd__list {
+    @extend %list;
+    display: flex;
+}
+
+.section-wwd__item {
+    max-width: 370px;
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.section-wwd__text {
+    display: block;
+    width: 370px;
+    padding: 27px 0;
+    background-color: $bgc-text-wwd-section-color;
+    position: absolute;
+    bottom: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main-background-color;
+}

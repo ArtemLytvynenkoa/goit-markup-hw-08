@@ -17,6 +17,15 @@
     cursor: pointer;
 
     margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+        width: 450px;
+     }
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
 }
 
 .page-footer__button {
@@ -33,3 +42,10 @@
      margin-left: 10px;
      fill: currentColor;
  }
+
+ .page-footer__form {
+     @media screen and (min-width: $desktop) {
+         display: flex;
+     }
+ }
+

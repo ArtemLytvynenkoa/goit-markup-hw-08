@@ -32,3 +32,12 @@
         color: $our-team-section-background-color;
     }
 }
+
+.address-container {
+    @media screen and (min-width: $tablet) {
+        margin-right: 165px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
+}

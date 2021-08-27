@@ -1,9 +1,17 @@
 .auth-menu {
     @extend %list;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 
-.auth-menu__item {
-    padding-bottom: 10px;
+.auth-menu__item:not(:last-child) {
+    margin-bottom: 10px;
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+    
 }
 
 .auth-menu__link {
@@ -24,10 +32,26 @@
 
     &:hover, &:focus{
         color: $accent-color;
-}
+    }
+    @media screen and(min-width: $desktop) {
+        font-size: 14px;
+        line-height: 16px;        
+    }
 }
 
-.auth-menu__icon {
-    margin-right: 8px;
-    fill: currentColor;
+.auth-menu__envelope {
+    @extend %auth-menu__icon;
+    @media screen and(min-width: $desktop) {
+        width: 16px;
+        height: 12px;
+    }
+
+}
+
+.auth-menu__phone {
+    @extend %auth-menu__icon;
+    @media screen and(min-width: $desktop) {
+        height: 16px;
+    }
+
 }

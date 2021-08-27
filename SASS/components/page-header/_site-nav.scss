@@ -3,6 +3,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (min-width: $tablet) {
+      margin-right: 84px;
+    } 
 }
 
 .page-header__menu {
