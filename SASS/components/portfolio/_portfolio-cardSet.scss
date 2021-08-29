@@ -3,22 +3,25 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
-        margin-top: -1 * 4%;
-        margin-left: -1 * 4%;  
+        margin-top: -1 * $main-margin;
+        margin-left: -1 * $main-margin;  
      }
 }
 
 .card-set__product {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    @media screen and (max-width: $tablet - 1px) {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: $main-margin; 
+    }
     @media screen and (min-width: $tablet) {
         flex-basis: 100% / 2 - 4%;
-        margin-left: 4%;
-        margin-top: 4%;
-        margin-bottom: 0;
-        margin-right: 0;
+        margin-left: $main-margin;
+        margin-top: $main-margin;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-basis: 100% / 3 - 2.5%;
     }
 }
 
@@ -71,6 +74,13 @@
     border-bottom: 1px solid $portfolio-list-border;
     border-right: 1px solid $portfolio-list-border;
     border-left: 1px solid $portfolio-list-border;
+}
+
+.card-set__product:nth-child(-n + 2)
+.product-meta {
+    @media screen and (max-width: $desktop - 1px) {
+        height: 146px;
+    }
 }
 
 .product-meta__name {

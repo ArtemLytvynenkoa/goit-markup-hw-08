@@ -28,13 +28,16 @@
 
 .section-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
 
-    margin-bottom: 50px;
+    margin-bottom: $main-margin;
 
-    color: $title-text-color; 
+    color: $title-text-color;
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+    }
 }
 
 .section-offer__subtitle, 

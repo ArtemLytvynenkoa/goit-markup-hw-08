@@ -43,7 +43,7 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: $main-margin;
 
     @media screen and (min-width: $desktop) {
         max-width: 696px;

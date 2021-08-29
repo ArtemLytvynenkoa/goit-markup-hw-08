@@ -6,10 +6,11 @@
 }
 
 .auth-menu__item:not(:last-child) {
-    margin-bottom: 10px;
+    @media screen and (max-width: $desktop - 1px) {
+        margin-bottom: 10px;
+    }
     @media screen and (min-width: $desktop) {
-        margin-bottom: 0;
-        margin-right: 30px;
+        margin-right: $main-margin;
     }
     
 }
@@ -33,7 +34,7 @@
     &:hover, &:focus{
         color: $accent-color;
     }
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         font-size: 14px;
         line-height: 16px;        
     }
@@ -41,7 +42,7 @@
 
 .auth-menu__envelope {
     @extend %auth-menu__icon;
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         width: 16px;
         height: 12px;
     }
@@ -50,7 +51,7 @@
 
 .auth-menu__phone {
     @extend %auth-menu__icon;
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         height: 16px;
     }
 

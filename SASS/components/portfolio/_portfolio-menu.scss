@@ -5,8 +5,11 @@
     margin-bottom: 40px;
     @media screen and (min-width: $tablet) {
         justify-content: center;
-        margin-bottom: 30px;
-     }
+        margin-bottom: $main-margin;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
  }
 
 .section-portfolio__item:not(:last-child) {
@@ -14,6 +17,9 @@
 }
 
 .section-portfolio__item:not(:nth-child(n + 4)) {
+    @media screen and (max-width: $tablet - 1px) {
+       margin-bottom: 15px; 
+    }
     margin-bottom: 15px;
 }
 

@@ -27,7 +27,7 @@
 %section-offer__item::before {
     display: block;
     content: "";
-    margin-bottom: 30px;
+    margin-bottom: $main-margin;
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
