@@ -6,6 +6,7 @@
     width: 100%;
     height: 100%;
     background-color: $bd-color;
+    padding: 93px 15px;
 
     opacity: 1;
     
@@ -14,6 +15,7 @@
     $transition-duration
     $transition-timing-function;
    
+    overflow-y: scroll;
 }
 
 .data-modal--hidden {
@@ -22,24 +24,33 @@
 }
 
 .data-modal__window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
     box-shadow: $hero-form-shadow;
     border-radius: 4px;
 
-    transform: translate(-50%, -50%) scale(1);
     transition-property: transform, scale;
     transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
-    
+    position: relative;
+
+
     padding: 40px;
     width: 450px;
     height: 609px;
-    overflow-y: scroll;
 
     background-color: $main-background-color;
+    
+    @media screen and (max-width: $mobile - 1px) {
+        width: 100%;
+        height: auto;
+    }
+
+    @media screen and (min-width: $tablet){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
     @media screen and (min-width: $desktop) {
         width: 528px;
         height: 581px;

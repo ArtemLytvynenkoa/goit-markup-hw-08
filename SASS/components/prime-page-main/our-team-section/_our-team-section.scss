@@ -40,12 +40,12 @@
     box-shadow:  $hero-form-shadow;
 
     @media screen and (min-width: $tablet) {
-        flex-basis: 100% / 2 - 4%;
+        flex-basis: calc(100% / 2 - 30px);
         margin-left: $main-margin;
         margin-top: $main-margin;
     }
     @media screen and (min-width: $desktop) {
-        flex-basis: 100% / 4 - 2.5%;
+        flex-basis: calc(100% / 4 - 30px);
     }
 }
 

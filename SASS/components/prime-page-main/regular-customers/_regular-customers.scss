@@ -11,15 +11,15 @@
 }
 
 .section-customers__item {
-    width: 100% / 2 - 6.25%;
+    width: calc(100% / 2 - 30px);
     margin-left: $main-margin;
     margin-top: $main-margin;
 
     @media screen and (min-width: $tablet) {
-        flex-basis: 100% / 3 - 4%;
+        flex-basis: calc(100% / 3 - 30px);
     }
     @media screen and (min-width: $desktop) {
-        flex-basis: 100% / 6 - 2.5%;
+        flex-basis: calc(100% / 6 - 30px);
         width: 170px;
         height: 92px;
     } 

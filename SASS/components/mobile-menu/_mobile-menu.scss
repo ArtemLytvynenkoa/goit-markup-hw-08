@@ -85,7 +85,7 @@
 }
 
 .mobile-menu__link--current::after {
-        content: "";
+    content: "";
     display: block;
     position: absolute;
     bottom: -1px;
@@ -129,6 +129,7 @@
 .mobile-social {
     @extend %list;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mobile-social__item:not(:last-child) {

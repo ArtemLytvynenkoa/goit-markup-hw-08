@@ -1,5 +1,5 @@
 .section-hero {
-    max-width: 480px;
+    max-width: 1600px;
     height: 400px;
     margin-right: auto;
     margin-left: auto;
@@ -9,24 +9,73 @@
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("../images/Background-img/Hero-bg/hero-bgi-mobile.jpg");
+        url("../images/Background-img/Hero-bg/Mobile/hero-bgi-mobile.jpg");
 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 480px 400px;
 
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;  
 
-    @media screen and (min-width: $tablet) {
-        max-width: 768px;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)  
+           ), 
+           url("../images/Background-img/Hero-bg/Mobile/hero-bgi-mobile@2x.jpg"); 
     }
+    
+    @media screen and (min-width: $tablet) {
+        background-image:
+            linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)  
+           ), 
+           url("../images/Background-img/Hero-bg/Tablet/hero-bgi-tablet.jpg");
+           background-size: contain;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image:
+            linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)  
+           ), 
+           url("../images/Background-img/Hero-bg/Tablet/hero-bgi-tablet@2x.jpg");  
+        }
+    } 
+
     @media screen and (min-width: $desktop) {
-        max-width: 1200px;
         height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
+        background-image:
+            linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)  
+           ), 
+           url("../images/Background-img/Hero-bg/Desktop/hero-bgi-desktop.jpg");
+           background-size: cover;
+           @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image:
+                linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)  
+            ), 
+            url("../images/Background-img/Hero-bg/Desktop/hero-bgi-desktop@2x.jpg");  
+            }
     }
 
 }
