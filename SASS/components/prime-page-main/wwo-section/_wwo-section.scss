@@ -5,11 +5,13 @@
 .section-offer__subtitle {
     margin-bottom: 10px;
 
-    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    @media screen and (max-width: $tablet - 1px) {
+        text-align: center;
+    }
 }
 
 .section-offer__list {

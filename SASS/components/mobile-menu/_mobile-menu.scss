@@ -61,6 +61,9 @@
 .mobile-menu {
     @extend %list;
     margin-bottom: 305px;
+    @media screen and (max-width: $mobile - 1px) {
+        margin-bottom: 200px;
+    }
 }
 
 .mobile-menu__item:not(:last-child) {
@@ -81,6 +84,9 @@
 
     &--current, &:hover, &:focus {
         color: $accent-color;
+    }
+    @media screen and (max-width: $mobile - 1px) {
+        font-size: 20px;
     }
 }
 
@@ -113,6 +119,9 @@
     letter-spacing: 0.02em;
 
     color: $accent-color;
+    @media screen and (max-width: $mobile - 1px) {
+        font-size: 17px;
+    }
 }
 
 .mobile-auth__mailto {
@@ -124,6 +133,9 @@
     letter-spacing: 0.02em;
 
     color: $primary-text-color;
+    @media screen and (max-width: $mobile - 1px) {
+        font-size: 12px;
+    }
 }
 
 .mobile-social {
@@ -159,4 +171,7 @@
     letter-spacing: 0.02em;
 
     color: $accent-color;
+    @media screen and (max-width: $mobile - 1px) {
+        font-size: 10px;
+    }
 }

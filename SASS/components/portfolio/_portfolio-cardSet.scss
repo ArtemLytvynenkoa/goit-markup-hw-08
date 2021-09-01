@@ -76,10 +76,12 @@
     border-left: 1px solid $portfolio-list-border;
 }
 
-.card-set__product:nth-child(-n + 2)
+.card-set__product:first-child
 .product-meta {
-    @media screen and (max-width: $desktop - 1px) {
-        height: 146px;
+    @media screen 
+    and (min-width: $tablet)
+    and (max-width: $desktop - 1px) {
+        padding-bottom: 54px;
     }
 }
 

@@ -394,7 +394,7 @@ input {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Background-img/Hero-bg/Mobile/hero-bgi-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 480px 400px;
+  background-size: cover;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -411,7 +411,7 @@ input {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Background-img/Hero-bg/Tablet/hero-bgi-tablet.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Background-img/Hero-bg/Tablet/hero-bgi-tablet.jpg");
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -732,11 +732,16 @@ input {
 
 .section-offer__subtitle {
   margin-bottom: 10px;
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .section-offer__subtitle {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1390,9 +1395,9 @@ input {
   border-left: 1px solid #EEEEEE;
 }
 
-@media screen and (max-width: 1199px) {
-  .card-set__product:nth-child(-n + 2) .product-meta {
-    height: 146px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-set__product:first-child .product-meta {
+    padding-bottom: 54px;
   }
 }
 
@@ -1495,6 +1500,12 @@ input {
   margin-bottom: 305px;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-menu {
+    margin-bottom: 200px;
+  }
+}
+
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -1511,6 +1522,12 @@ input {
 
 .mobile-menu__link--current, .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: #2196F3;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-menu__link {
+    font-size: 20px;
+  }
 }
 
 .mobile-menu__link--current::after {
@@ -1541,6 +1558,12 @@ input {
   color: #2196F3;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-auth__tel {
+    font-size: 17px;
+  }
+}
+
 .mobile-auth__mailto {
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -1548,6 +1571,12 @@ input {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-auth__mailto {
+    font-size: 12px;
+  }
 }
 
 .mobile-social {
@@ -1584,5 +1613,11 @@ input {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-social__link {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
