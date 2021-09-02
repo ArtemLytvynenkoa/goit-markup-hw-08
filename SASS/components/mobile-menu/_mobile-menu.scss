@@ -60,9 +60,9 @@
 
 .mobile-menu {
     @extend %list;
-    margin-bottom: 305px;
+    margin-bottom: 230px;
     @media screen and (max-width: $mobile - 1px) {
-        margin-bottom: 200px;
+        margin-bottom: 140px;
     }
 }
 

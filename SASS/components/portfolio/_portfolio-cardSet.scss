@@ -21,7 +21,7 @@
         margin-top: $main-margin;
     }
     @media screen and (min-width: $desktop) {
-        flex-basis: calc(100% / 3 - 30px;
+        flex-basis: calc(100% / 3 - 30px);
     }
 }
 
@@ -37,6 +37,16 @@
     &:hover {
         border-color: $portfolio-list-border;
         box-shadow: $portfolio-cardSet-shadow;
+    }
+
+    .card-set__product:first-child & {
+        @media screen 
+        and (min-width: $tablet)
+        and (max-width: $desktop - 1px) {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
     }
 }
 
@@ -71,17 +81,17 @@
 
 .product-meta {
     padding: 20px 24px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-bottom: 1px solid $portfolio-list-border;
     border-right: 1px solid $portfolio-list-border;
     border-left: 1px solid $portfolio-list-border;
-}
-
-.card-set__product:first-child
-.product-meta {
-    @media screen 
-    and (min-width: $tablet)
-    and (max-width: $desktop - 1px) {
-        padding-bottom: 56px;
+    .card-set__product:first-child & {
+        @media screen 
+        and (min-width: $tablet)
+        and (max-width: $desktop - 1px) {
+            flex-grow: 1;
+        }
     }
 }
 
